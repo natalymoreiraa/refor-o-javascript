@@ -402,7 +402,16 @@ document.getElementById("btnVerde").addEventListener("click", function () {
 // Dica: use uma variável para guardar o valor do contador
 // e atualize o textContent do <h1> a cada clique.
 // ------------------------------------------------------------
-
+let valorContador = 0;
+let h1Contador = document.getElementById("contador");
+document.getElementById("btnMais").addEventListener("click", function () {
+  valorContador++;
+  h1Contador.textContent = valorContador;
+});
+document.getElementById("btnMenos").addEventListener("click", function () {
+  valorContador--;
+  h1Contador.textContent = valorContador;
+});
 
 
 
