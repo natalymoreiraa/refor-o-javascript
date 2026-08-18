@@ -320,7 +320,11 @@ console.log(contarVogais("javascript"));
 // ------------------------------------------------------------
 
 
-
+let listaCompras = [];
+listaCompras.push("Arroz", "Feijão", "Leite", "Ovos", "Pão");
+console.log(listaCompras);
+listaCompras.pop();
+console.log(listaCompras);
 
 // EXERCÍCIO 18 - Maior e menor
 // Crie um array com 8 números diferentes.
