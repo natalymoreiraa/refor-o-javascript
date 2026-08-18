@@ -181,7 +181,10 @@ if (notaConceito === 10 || notaConceito === 9) {
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
-
+let numTabuada = 5;
+for (let i = 1; i <= 10; i++) {
+  console.log(`${numTabuada} x ${i} = ${numTabuada * i}`);
+}
 
 
 // EXERCÍCIO 10 - Contagem regressiva
