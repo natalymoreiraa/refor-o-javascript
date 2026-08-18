@@ -293,7 +293,17 @@ console.log(inverter("javascript"));
 // Dica: transforme em minúscula com .toLowerCase()
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
-
+function contarVogais(palavra) {
+  let count = 0;
+  let vogais = "aeiouAEIOU";
+  for (let i = 0; i < palavra.length; i++) {
+    if (vogais.includes(palavra[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(contarVogais("javascript"));
 
 
 
