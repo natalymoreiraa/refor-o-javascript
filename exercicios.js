@@ -556,3 +556,16 @@ document.getElementById("btnGerar").addEventListener("click", function () {
 // ------------------------------------------------------------
 
 
+let imagensGaleria = ["img1.jpg", "img2.jpg", "img3.jpg"];
+let indiceGaleria = 0;
+let elementoImg = document.getElementById("imgGaleria");
+
+document.getElementById("btnProximo").addEventListener("click", function () {
+  indiceGaleria = (indiceGaleria + 1) % imagensGaleria.length;
+  elementoImg.src = imagensGaleria[indiceGaleria];
+});
+
+document.getElementById("btnAnterior").addEventListener("click", function () {
+  indiceGaleria = (indiceGaleria - 1 + imagensGaleria.length) % imagensGaleria.length;
+  elementoImg.src = imagensGaleria[indiceGaleria];
+});
