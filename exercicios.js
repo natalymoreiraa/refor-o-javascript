@@ -127,7 +127,21 @@ if (imc < 18.5) {
 // ------------------------------------------------------------
 
 
-
+let minhaJogada = "pedra";
+let opcoes = ["pedra", "papel", "tesoura"];
+let computador = opcoes[Math.floor(Math.random() * 3)];
+console.log(minhaJogada, computador);
+if (minhaJogada === computador) {
+  console.log("Empate");
+} else if (
+  (minhaJogada === "pedra" && computador === "tesoura") ||
+  (minhaJogada === "papel" && computador === "pedra") ||
+  (minhaJogada === "tesoura" && computador === "papel")
+) {
+  console.log("Ganhou");
+} else {
+  console.log("Perdeu");
+}
 
 // EXERCÍCIO 8 - Sistema de notas
 // Crie uma variável com uma nota de 0 a 10.
