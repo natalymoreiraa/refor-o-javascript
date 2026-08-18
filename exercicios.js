@@ -520,7 +520,33 @@ function responder(indiceOpcao) {
 // ------------------------------------------------------------
 
 
+function gerarSenha(tamanho, usarMaiusculas, usarNumeros, usarSimbolos) {
+  let minusculas = "abcdefghijklmnopqrstuvwxyz";
+  let maiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let numeros = "0123456789";
+  let simbolos = "!@#$%^&*()_+-=[]{}|";
+  let caracteres = minusculas;
 
+  if (usarMaiusculas) caracteres += maiusculas;
+  if (usarNumeros) caracteres += numeros;
+  if (usarSimbolos) caracteres += simbolos;
+
+  let senha = "";
+  for (let i = 0; i < tamanho; i++) {
+    let rand = Math.floor(Math.random() * caracteres.length);
+    senha += caracteres[rand];
+  }
+  return senha;
+}
+
+document.getElementById("btnGerar").addEventListener("click", function () {
+  let tam = Number(document.getElementById("tamanhoSenha").value);
+  let mai = document.getElementById("chkMaiusculas").checked;
+  let num = document.getElementById("chkNumeros").checked;
+  let sim = document.getElementById("chkSimbolos").checked;
+  let resultado = gerarSenha(tam, mai, num, sim);
+  document.getElementById("resultadoSenha").textContent = resultado;
+});
 
 // EXERCÍCIO 28 - Galeria de imagens
 // Crie no HTML: uma <img> grande e dois botões (Anterior, Próximo).
