@@ -102,7 +102,19 @@ if (idade >= 18) {
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
 
-
+let peso = 70;
+let altura = 1.75;
+let imc = peso / (altura * altura);
+console.log(imc);
+if (imc < 18.5) {
+  console.log("Abaixo do peso");
+} else if (imc <= 24.9) {
+  console.log("Peso normal");
+} else if (imc <= 29.9) {
+  console.log("Sobrepeso");
+} else {
+  console.log("Obesidade");
+}
 
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura
