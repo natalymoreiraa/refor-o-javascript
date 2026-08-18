@@ -334,7 +334,11 @@ console.log(listaCompras);
 // Ou tente fazer com um for (mais desafiador!).
 // ------------------------------------------------------------
 
-
+let numerosEx18 = [12, 45, 3, 89, 22, 7, 64, 15];
+let maior = Math.max(...numerosEx18);
+let menor = Math.min(...numerosEx18);
+console.log(maior);
+console.log(menor);
 
 
 // EXERCÍCIO 19 - Ordenar nomes
