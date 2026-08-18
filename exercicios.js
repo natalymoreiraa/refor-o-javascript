@@ -482,7 +482,32 @@ document.getElementById("btnResetar").addEventListener("click", function () {
 //   { pergunta: "...", opcoes: ["a", "b", "c"], correta: 1 }
 // ------------------------------------------------------------
 
+let perguntas = [
+  { pergunta: "Quanto é 2 + 2?", opcoes: ["3", "4", "5"], correta: 1 },
+  { pergunta: "Qual a cor do céu?", opcoes: ["Azul", "Verde", "Vermelho"], correta: 0 },
+  { pergunta: "Quantos dias tem um ano comum?", opcoes: ["365", "366", "360"], correta: 0 },
+  { pergunta: "Qual a capital do Brasil?", opcoes: ["São Paulo", "Rio de Janeiro", "Brasília"], correta: 2 },
+  { pergunta: "Qual o elemento da água?", opcoes: ["H2O", "CO2", "O2"], correta: 0 }
+];
+let perguntaAtual = 0;
+let pontuacao = 0;
 
+function mostrarPergunta() {
+  if (perguntaAtual < perguntas.length) {
+    console.log(perguntas[perguntaAtual].pergunta);
+    console.log(perguntas[perguntaAtual].opcoes);
+  } else {
+    console.log(`Você acertou ${pontuacao} de ${perguntas.length}`);
+  }
+}
+
+function responder(indiceOpcao) {
+  if (indiceOpcao === perguntas[perguntaAtual].correta) {
+    pontuacao++;
+  }
+  perguntaAtual++;
+  mostrarPergunta();
+}
 
 
 // EXERCÍCIO 27 - Gerador de senha
