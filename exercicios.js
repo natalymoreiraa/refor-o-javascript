@@ -20,7 +20,12 @@
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
 
-
+let num1 = 10;
+let num2 = 5;
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
 
 
 // EXERCÍCIO 2 - Conversor de temperatura
