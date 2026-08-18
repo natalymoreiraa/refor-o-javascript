@@ -348,7 +348,11 @@ console.log(menor);
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
 
-
+let nomes = ["Carlos", "Ana", "Beatriz", "Eduardo", "Daniela", "Fernanda"];
+nomes.sort();
+console.log(nomes);
+nomes.reverse();
+console.log(nomes);
 
 
 // EXERCÍCIO 20 - Filtrar pares
