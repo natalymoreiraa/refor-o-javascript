@@ -224,7 +224,17 @@ console.log(soma);
 // ------------------------------------------------------------
 
 
-
+let secreto = Math.floor(Math.random() * 10) + 1;
+let palpite = null;
+while (palpite !== secreto) {
+  palpite = Number(prompt("Adivinhe o número (1 a 10):"));
+  if (palpite < secreto) {
+    console.log("maior");
+  } else if (palpite > secreto) {
+    console.log("menor");
+  }
+}
+console.log("Parabéns! Acertou!");
 
 // ============================================================
 //  BLOCO 4 - FUNÇÕES
