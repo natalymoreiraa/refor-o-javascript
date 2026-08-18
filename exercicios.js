@@ -35,7 +35,9 @@ console.log(num1 / num2);
 // ------------------------------------------------------------
 
 
-
+let celsius = 25;
+let fahrenheit = celsius * (9 / 5) + 32;
+console.log(fahrenheit);
 
 // EXERCÍCIO 3 - Par ou ímpar
 // Crie uma variável com um número.
