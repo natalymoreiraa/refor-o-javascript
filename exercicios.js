@@ -432,7 +432,7 @@ document.getElementById("btnToggle").addEventListener("click", function () {
 // Esse exercício é a atividade principal!
 // Abra o arquivo script.js da atividade e complete os níveis.
 // ------------------------------------------------------------
-
+''console.log("Atividade no script.js");
 
 // ============================================================
 //  BLOCO 7 - DOM + LÓGICA COMBINADA (Desafio!)
