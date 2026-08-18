@@ -46,7 +46,12 @@ console.log(fahrenheit);
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
 
-
+let numeroParImpar = 7;
+if (numeroParImpar % 2 === 0) {
+  console.log("Par");
+} else {
+  console.log("Ímpar");
+}
 
 
 // EXERCÍCIO 4 - Média de notas
