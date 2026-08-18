@@ -423,7 +423,9 @@ document.getElementById("btnMenos").addEventListener("click", function () {
 // display: none
 // ------------------------------------------------------------
 
-
+document.getElementById("btnToggle").addEventListener("click", function () {
+  document.getElementById("meuDiv").classList.toggle("escondido");
+});
 
 
 // EXERCÍCIO 24 - Lista de tarefas
