@@ -207,7 +207,12 @@ console.log("Feliz Ano Novo!");
 // ------------------------------------------------------------
 
 
-
+let N = 5;
+let soma = 0;
+for (let i = 1; i <= N; i++) {
+  soma += i;
+}
+console.log(soma);
 
 // EXERCÍCIO 12 - Adivinhe o número
 // O computador escolhe um número aleatório de 1 a 10:
