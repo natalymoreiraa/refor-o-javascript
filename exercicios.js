@@ -154,7 +154,18 @@ if (minhaJogada === computador) {
 // ------------------------------------------------------------
 
 
-
+let notaConceito = 8;
+if (notaConceito === 10 || notaConceito === 9) {
+  console.log("A");
+} else if (notaConceito === 8 || notaConceito === 7) {
+  console.log("B");
+} else if (notaConceito === 6 || notaConceito === 5) {
+  console.log("C");
+} else if (notaConceito === 4 || notaConceito === 3) {
+  console.log("D");
+} else if (notaConceito === 2 || notaConceito === 1 || notaConceito === 0) {
+  console.log("F");
+}
 
 // ============================================================
 //  BLOCO 3 - LOOPS (for, while)
