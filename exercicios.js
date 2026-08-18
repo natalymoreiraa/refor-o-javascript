@@ -248,7 +248,10 @@ console.log("Parabéns! Acertou!");
 // Exemplo: saudacao("Maria") retorna "Olá, Maria!"
 // ------------------------------------------------------------
 
-
+function saudacao(nome) {
+  return `Olá, ${nome}!`;
+}
+console.log(saudacao("Maria"));
 
 
 // EXERCÍCIO 14 - Número primo
