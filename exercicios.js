@@ -447,7 +447,32 @@ document.getElementById("btnToggle").addEventListener("click", function () {
 // ------------------------------------------------------------
 
 
+let segundos = 0;
+let intervalId = null;
+let display = document.getElementById("displayCronometro");
 
+document.getElementById("btnIniciar").addEventListener("click", function () {
+  if (intervalId === null) {
+    intervalId = setInterval(function () {
+      segundos++;
+      let min = Math.floor(segundos / 60).toString().padStart(2, "0");
+      let seg = (segundos % 60).toString().padStart(2, "0");
+      display.textContent = `${min}:${seg}`;
+    }, 1000);
+  }
+});
+
+document.getElementById("btnPausar").addEventListener("click", function () {
+  clearInterval(intervalId);
+  intervalId = null;
+});
+
+document.getElementById("btnResetar").addEventListener("click", function () {
+  clearInterval(intervalId);
+  intervalId = null;
+  segundos = 0;
+  display.textContent = "00:00";
+});
 
 // EXERCÍCIO 26 - Quiz de perguntas
 // Crie um quiz com 5 perguntas de múltipla escolha.
