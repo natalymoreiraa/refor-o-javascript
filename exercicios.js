@@ -262,7 +262,14 @@ console.log(saudacao("Maria"));
 // algum divide o número sem resto (numero % i === 0).
 // ------------------------------------------------------------
 
-
+function ehPrimo(numero) {
+  if (numero <= 1) return false;
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) return false;
+  }
+  return true;
+}
+console.log(ehPrimo(7));
 
 
 // EXERCÍCIO 15 - Inverter string
