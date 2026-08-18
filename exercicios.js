@@ -362,7 +362,11 @@ console.log(nomes);
 // Dica: use .filter(function(numero) { return numero % 2 === 0 })
 // ------------------------------------------------------------
 
-
+let numeros1a20 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+let pares = numeros1a20.filter(function (numero) {
+  return numero % 2 === 0;
+});
+console.log(pares);
 
 
 // ============================================================
