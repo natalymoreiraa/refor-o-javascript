@@ -384,7 +384,15 @@ console.log(pares);
 // Dica: document.body.style.backgroundColor = 'red'
 // ------------------------------------------------------------
 
-
+document.getElementById("btnVermelho").addEventListener("click", function () {
+  document.body.style.backgroundColor = "red";
+});
+document.getElementById("btnAzul").addEventListener("click", function () {
+  document.body.style.backgroundColor = "blue";
+});
+document.getElementById("btnVerde").addEventListener("click", function () {
+  document.body.style.backgroundColor = "green";
+});
 
 
 // EXERCÍCIO 22 - Contador
